@@ -1,0 +1,72 @@
+body {
+  background-color: #f8f9fa; /* Very light grey */
+  display: flex; /* Needed for sticky footer */
+  flex-direction: column; /* Needed for sticky footer */
+  min-height: 100vh; /* Needed for sticky footer */
+}
+
+main {
+  flex: 1 0 auto; /* Needed for sticky footer */
+}
+
+.navbar {
+  background-color: #343a40 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  margin: 0 15px;
+  transition: color 0.3 ease, transform 0.2 ease; /* Add transitions */
+}
+.nav-link:hover{
+    color: #007bff; /* Change color on hover */
+    transform: translateY(-2px); /* Slightly move up on hover */
+}
+
+#hero {
+  background-image: url('https://cdn.discordapp.com/app-icons/1329561787116294236/a2e3f89f608ca21abe589157f81ee445.png?size=512'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+
+#about,
+#commands {
+  background-color: white;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#commands h3 {
+  margin-top: 20px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+section {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Move down slightly */
+  transition: opacity 1s ease, transform 1s ease; /* Add transitions */
+
+}
+section.visible {
+    opacity: 1; /* Fully visible when the 'visible' class is added */
+    transform: translateY(0); /* Move back to original position */
+}
