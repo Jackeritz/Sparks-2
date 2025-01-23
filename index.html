@@ -1,0 +1,96 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <your bot name here> </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sparks 2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#commands">Commands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#invite">Invite</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5 flex-grow-1">
+        <section id="hero" class="py-5 text-center bg-light">
+            <div class="container">
+                <h1>Welcome to <your bot name> </h1>
+                <p class="lead">A fun and customizable currency bot for your Discord server.</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1329561787116294236&permissions=8&integration_type=0&scope=bot" class="btn btn-primary btn-lg">Invite the Bot</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2>About</h2>
+                <p>This bot allows users to earn and manage Credits within your Discord server. It features fun commands, customizable settings, and a robust banking system.</p>
+            </div>
+        </section>
+
+        <section id="commands" class="py-5 bg-light">
+            <div class="container">
+                <h2>Commands</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Basic Commands</h3>
+                        <ul>
+                            <li><code>!play</code>: Earn Credits.</li>
+                            <li><code>!eternal</code>: A chance to earn a small or large amount of Credits.</li>
+                            <li><code>!infernal</code>: A chance to gain or lose a small amount of Credits.</li>
+                            <li><code>!freeplay</code>: A 50/50 chance to win or lose Credits.</li>
+                            <li><code>!balance</code>: Check your balances.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Banking</h3>
+                        <ul>
+                            <li><code>!deposit &lt;amount&gt;</code>: Deposit Credits.</li>
+                            <li><code>!withdraw &lt;amount&gt;</code>: Withdraw Credits.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Admin Commands</h3>
+                        <ul>
+                            <li><code>!setcurrencyname &lt;name&gt;</code>: Set the currency name.</li>
+                            <li><code>!addcommand &lt;command&gt; &lt;response&gt;</code>: Add a custom command.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="invite" class="py-5 text-center">
+            <div class="container">
+                <h2>Invite the Bot</h2>
+                <a href="Your url givin from the OAuth2 in the discord develope portal" class="btn btn-primary btn-lg">Invite Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p>&copy; <year> <yourname> </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
